@@ -1,0 +1,13 @@
+html {
+  background: url("fine.gif") fixed no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+p {
+  background-color: yellow;
+  color: blue;
+  font-size: 72px;
+}
+body {
+  border: 10px dotted red;
+}
