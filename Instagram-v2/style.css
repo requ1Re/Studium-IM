@@ -11,15 +11,29 @@ body {
   border: 10px dotted red;
   cursor: url('frosch.jpeg'), auto;
 }
+img {
+  border: 10px dashed brown;
+}
 img:hover {
   animation: rotate 1s reverse linear infinite;
 }
-
+form {
+  background-color: aqua;
+}
+form:hover {
+  animation: rotate 1000s linear infinite;
+}
 @keyframes rotate {
-  from {
+  0% {
     transform: rotate(0deg);
+    zoom: 1;
   }
-  to {
+  50% {
+    transform: rotate(180deg);
+    zoom: 1.5;
+  }
+  100% {
     transform: rotate(360deg);
+    zoom: 1;
   }
 }
