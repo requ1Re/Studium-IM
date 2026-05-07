@@ -1,0 +1,6 @@
+img {
+    height: 250px;
+}
+img:hover {
+    rotate: 90deg;
+}
