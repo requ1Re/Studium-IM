@@ -1,32 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --uhh-blau: #0271bb;
+  --uhh-blau-120: rgb(0, 78, 129);
+  --uhh-rot: #e2001a;
+  --uhh-grau: #3b515b;
+  --uhh-grau-50: rgb(178, 186, 189);
+  --uhh-grau-35: rgb(200, 205, 208);
+}
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
 
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .content {
-    display: flex;
-    gap: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: var(--uhh-blau);
 }
 .sections {
-    width: 300px;
-    background-color: #f0f0f0;
+  width: inherit;
+  height: 100%;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .sections button {
-    padding: 10px;
-    border: none;
-    background-color: #ddd;
-    cursor: pointer;
+  padding: 10px;
+  border: none;
+  background-color: var(--uhh-blau);
+  color: white;
+  cursor: pointer;
 }
 .sections button:hover {
-    background-color: #ccc;
+  background-color: var(--uhh-blau-120);
+}
+.section {
+  display: flex;
+  justify-content: space-between;
 }
 .section.active {
-    background-color: #bbb;
+  background-color: var(--uhh-blau-120);
+}
+#section-description {
+  width: 100%;
+  max-width: 100%;
+  height: 75px;
+  background-color: var(--uhh-grau-50);
+  padding: 10px;
 }
